@@ -65,11 +65,11 @@ function Menu(){
             </ul>
             <label>5555</label>
             <Routes>
-                <Route path='/Home'  element={<Home />}/>
-                <Route path='/Cart'  element={<Cart />}/>
-                <Route path='/CartRecord'  element={<CartRecord />}/>
-                <Route path='/Login' element={<Login />}/>
-                <Route path='/Logout' element={<Logout />}/>
+                <Route path='/ghpageTest/Home'  element={<Home />}/>
+                <Route path='/ghpageTest/Cart'  element={<Cart />}/>
+                <Route path='/ghpageTest/CartRecord'  element={<CartRecord />}/>
+                <Route path='/ghpageTest/Login' element={<Login />}/>
+                <Route path='/ghpageTest/Logout' element={<Logout />}/>
             </Routes>
             
         </>
