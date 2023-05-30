@@ -63,7 +63,7 @@ function Menu(){
                 <li className='menuOptions' style={{display:(!checkLogin ? 'none': 'block')}} ><a href='/ghpageTest/Logout'>登出</a></li>
                 <li className='labelOnly'><label>{isLogin}</label></li>
             </ul>
-            
+            <label>5555</label>
             <Routes>
                 <Route path='/Home'  element={<Home />}/>
                 <Route path='/Cart'  element={<Cart />}/>
