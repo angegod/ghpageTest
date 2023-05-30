@@ -9,9 +9,9 @@ function Logout(){
             ReactSession.set("Login",false);
             ReactSession.set("User",undefined);
     
-            window.location.replace("http://localhost:3000/Login");
+            window.location.replace(process.env.PUBLIC_URL+"/Login");
         }else{
-            window.location.replace("http://localhost:3000/Home");
+            window.location.replace(process.env.PUBLIC_URL+"/Home");
         }
        
     },[])

@@ -38,11 +38,11 @@ function Menu(){
     function AddUnderlined(){//偵測當前路徑，第三個索引值為是否渲染過，避免造成效能問題
         const nowLocation=useLocation();
         if(!isUnderlined[3]){
-            if(nowLocation.pathname==='/Home'){
+            if(nowLocation.pathname==='/ghpageTest/Home'){
                 setUnderlined([true,false,false,true]);
-            }else if(nowLocation.pathname==='/Cart'){
+            }else if(nowLocation.pathname==='/ghpageTest/Cart'){
                 setUnderlined([false,true,false,true]);
-            }else if(nowLocation.pathname==='/CartRecord'){
+            }else if(nowLocation.pathname==='/ghpageTest/CartRecord'){
                 setUnderlined([false,false,true,true]);
             }
             console.log(isUnderlined);
@@ -63,13 +63,12 @@ function Menu(){
                 <li className='menuOptions' style={{display:(!checkLogin ? 'none': 'block')}} ><a href='/ghpageTest/Logout'>登出</a></li>
                 <li className='labelOnly'><label>{isLogin}</label></li>
             </ul>
-            <label>5555</label>
             <Routes>
-                <Route path='/ghpageTest/Home'  element={<Home />}/>
-                <Route path='/ghpageTest/Cart'  element={<Cart />}/>
-                <Route path='/ghpageTest/CartRecord'  element={<CartRecord />}/>
-                <Route path='/ghpageTest/Login' element={<Login />}/>
-                <Route path='/ghpageTest/Logout' element={<Logout />}/>
+                <Route path="/Home"  element={<Home />}/>
+                <Route path="/Cart"  element={<Cart />}/>
+                <Route path="/CartRecord"  element={<CartRecord />}/>
+                <Route path="/Login" element={<Login />}/>
+                <Route path="/Logout" element={<Logout />}/>
             </Routes>
             
         </>

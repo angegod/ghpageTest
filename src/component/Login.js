@@ -22,7 +22,7 @@ const Login=()=>{
                     alert("Login Success");
                     ReactSession.set("Login",true);
                     ReactSession.set("User",account);
-                    window.location.replace('http://localhost:3000/Menu');
+                    window.location.replace(process.env.PUBLIC_URL+'/Menu');
                 }
 
                 else
