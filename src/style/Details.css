@@ -1,0 +1,50 @@
+.totalList{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+}
+
+.sections{
+    width:75%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: bisque;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.descriptions{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: bisque;
+}
+
+.descriptions.details table{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.descriptions.details{
+    visibility: hidden;
+    max-height:0;
+    transition: max-height 0.5s ease-out; 
+
+}
+
+.descriptions.details.display{
+    visibility: visible;
+    height:auto;
+    max-height: 600px;
+    transition: max-height 0.5s ease-in; 
+}

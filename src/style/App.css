@@ -1,0 +1,181 @@
+.mainmenu{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background-color: gray;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+li.labelOnly{
+    position:absolute; 
+    right: 0;
+    font-size: medium;
+    padding-top: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+   
+}
+.menuOptions{
+    color: black;
+    border-color: white;
+    border-bottom: 5px solid gray;
+}
+
+.menuOptions:hover{
+    border-bottom: 5px solid brown;
+    transition: border-color 0.5s linear;
+    background-color: green;
+    
+}
+
+.menuOptions.active{
+    border-bottom: 5px solid brown;
+}
+
+h1{
+    text-align: center;
+}
+.buttons button{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+.buttons{
+    justify-self: center;
+    margin-left: 37%;
+}
+td{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+td{
+    color:white;
+}
+
+tbody tr:nth-child(2n-1){
+    background-color: brown;
+}
+tbody tr:nth-child(2n){
+    background-color: rgb(231, 165, 165);
+}
+
+
+
+thead tr{
+    background-color: rgb(63, 16, 16);
+    width: 70%;
+}
+
+.details{
+    background-color: white;
+}
+
+.result,.buttons{
+    padding-top:10px;
+}
+
+.productImg img{
+    width:150px;
+    height:200px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    
+    margin-left:10px;
+}
+.productDetails{
+    margin-top: 20px;
+    width:33%;
+    margin-bottom: 20px;
+}
+.cart table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.deleteCart,.sendCart{
+    margin-left:49%;
+    margin-top:5px;
+}
+.DetailsBtn button{
+    /*margin:10px;*/
+}
+.hint{
+    text-align: center;
+    color:red;
+}
+.price{
+    background-color: burlywood;
+    color:red;
+    font-size: 20px;
+    margin-left: 49%;
+    border-radius: 5px;
+}
+
+.changeBtn{
+    margin-left: 10px;
+    margin-right:10px;
+}
+/*更改數量之功能的CSS設計*/
+.editLabel{
+    display: none;
+    width:50px;
+}
+.editLabel.display{
+    display: block;
+}
+.countLabel{
+    display: block;
+    width: 50px;
+    height:25px;
+}
+.countLabel.hidden{
+    display: none;
+}
+
+
+
+@media(max-width:480px){
+    .productDetails{
+        margin-top: 20px;
+        width:50%;
+        margin-bottom: 20px;
+    }
+}
+
+/*處理添加特效*/
+.add{
+    visibility: hidden;
+    color: green;
+    width: 30%;
+}
+
+.add.active{
+    visibility: visible;
+    animation-name: disappear;
+    animation-duration: 1s;
+}
+
+
+@keyframes disappear{
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
