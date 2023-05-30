@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/App.css';
-import {Routes,Route,useLocation} from 'react-router-dom';
+import {Routes,Route,useLocation, Link} from 'react-router-dom';
 import Home from './Home';
 import Cart from './Cart';
 import Login from './Login';
@@ -56,11 +56,11 @@ function Menu(){
         <>
             <AddUnderlined/>
             <ul className='mainmenu'>
-                <li className={`menuOptions ${isUnderlined[0]? 'active' :'' }`} style={{display:(!checkLogin ? 'none': 'block')}} ><a href='/ghpageTest/Home'>主頁</a></li>
-                <li className={`menuOptions ${isUnderlined[1]? 'active' :'' }`} style={{display:(!checkLogin ? 'none': 'block')}} ><a href='/ghpageTest/Cart'>購物車</a></li>
-                <li className={`menuOptions ${isUnderlined[2]? 'active' :'' }`} style={{display:(!checkLogin ? 'none': 'block')}} ><a href='/ghpageTest/CartRecord'>購物紀錄</a></li>
-                <li className='menuOptions' style={{display:(checkLogin ? 'none': 'block')}}  ><a href='/ghpageTest/Login'>登入</a></li>
-                <li className='menuOptions' style={{display:(!checkLogin ? 'none': 'block')}} ><a href='/ghpageTest/Logout'>登出</a></li>
+                <li className={`menuOptions ${isUnderlined[0]? 'active' :'' }`} style={{display:(!checkLogin ? 'none': 'block')}} ><Link to="/Home">主頁</Link></li>
+                <li className={`menuOptions ${isUnderlined[1]? 'active' :'' }`} style={{display:(!checkLogin ? 'none': 'block')}} ><Link to="/Cart">購物車</Link></li>
+                <li className={`menuOptions ${isUnderlined[2]? 'active' :'' }`} style={{display:(!checkLogin ? 'none': 'block')}} ><Link to="/CartRecord">購物紀錄</Link></li>
+                <li className='menuOptions' style={{display:(checkLogin ? 'none': 'block')}}  ><Link to="/Login">登入</Link></li>
+                <li className='menuOptions' style={{display:(!checkLogin ? 'none': 'block')}} ><Link to="/Logout">登出</Link></li>
                 <li className='labelOnly'><label>{isLogin}</label></li>
             </ul>
             <Routes>
