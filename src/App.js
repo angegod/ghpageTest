@@ -6,7 +6,7 @@ import TestComponent from './component/TestComponent';
 function App() {
   return (
     <>
-    <BrowserRouter basename="/mainpage">
+    <BrowserRouter basename="/ghpageTest">
       <Menu/>      
     </BrowserRouter>
       
