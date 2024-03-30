@@ -69,6 +69,7 @@ function Menu(){
                 <Route path="/CartRecord"  element={<CartRecord />}/>
                 <Route path="/Login" element={<Login />}/>
                 <Route path="/Logout" element={<Logout />}/>
+                
             </Routes>
             
         </>

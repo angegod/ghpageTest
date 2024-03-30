@@ -95,7 +95,6 @@ const Home=()=>{
                             
                             <Button variant='warning' onClick={()=>addItemToCart(pages*6-(6-count))}>添加</Button>
                             <label id={"add"+count} className='add'>+1</label>
-                            <Button variant='warning'>詳情</Button>
                         </div>
                     </div>
                 </>

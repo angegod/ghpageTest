@@ -19,7 +19,7 @@
     margin-bottom: 10px;
 }
 .descriptions{
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,6 +34,29 @@
     width: 100%;
     
 }
+
+.descriptions .bookId{
+    text-align: center;
+    width: 10%;
+}
+.descriptions .bookDate{
+    text-align: center;
+    width: 45%;
+}
+.descriptions .bookTotal{
+    text-align: center;
+    width: 25%;
+}
+.descriptions .button{
+    text-align: center;
+    width: 20%;
+}
+
+.nowrapLabel{
+    white-space: nowrap;
+}
+
+
 
 .descriptions.details{
     visibility: hidden;

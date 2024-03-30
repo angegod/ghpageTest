@@ -27,4 +27,22 @@ namespace ReactTestApi.Models
         public string imgLink { get; set; }
 
     }
+
+    public class Product2
+    {
+        public Product2(int get_id,string get_names, int get_price, int get_total)
+        {
+            id = get_id;
+            name = get_names;
+            price = get_price;
+            total = get_total;
+        }
+
+        public int id { get; set; }
+        public string name { get; set; }
+
+        public int price    { get; set; }
+
+        public int total { get; set; }
+    }
 }

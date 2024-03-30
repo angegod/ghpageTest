@@ -43,8 +43,6 @@ namespace ReactTestApi.Controllers
                     Product p1 = new Product(id, name, price,0,link);
 
                     list1.Add(p1);
-
-                    
                 }
                 mydr.NextResult();
             }
@@ -53,6 +51,8 @@ namespace ReactTestApi.Controllers
 
         }
         //[EnableCors(origins: "http://localhost:3000", headers: "*", methods: "*")]
+
+
 
     }
 
